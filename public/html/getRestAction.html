@@ -1,0 +1,8 @@
+<script>
+    // console.log('getRestAction.html페이지 호출');
+    // const paramString = "email=tomato@hot.com&password=12345678"
+    // let searchParams = new URLSearchParams(paramString);
+    console.log(window.location.search);
+    let searchParams = new URLSearchParams(window.location.search);
+    console.log(`email: ${searchParams.get("email")}, password: ${searchParams.get("password")}`);
+</script>
